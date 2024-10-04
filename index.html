@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="layoutmode" content="standard">
+    <meta name="imagemode" content="force">
+    <meta name="wap-font-scale" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <title>拼手气红包，支付宝官方活动！</title>
+    <link rel="icon" href="https://i.alipayobjects.com/common/favicon/favicon.ico">
+   <link rel="icon" type="image/png" href="https://i.alipayobjects.com/common/favicon/favicon.ico">
+    <meta name="description" content="点击打开支付宝领取红包，试试红包手气！领取红包三天有效，记得使用。领取到的红包在支付宝首页卡包里有效期为三天，记得使用">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="拼手气红包，支付宝官方活动！">
+    <meta property="og:description" content="点击打开支付宝领取红包，试试红包手气！领取红包三天有效，记得使用。领取到的红包在支付宝首页卡包里有效期为三天，记得使用">
+    <meta property="og:image" content="https://i.alipayobjects.com/common/favicon/favicon.ico">
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        /*body{
+            background: url(./bg.png);
+        }*/
+        #bg{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+        }
+        #bg img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <body>
+    <div id="bg">
+        <img id="clickable-image" src="https://video.kts.g.mi.com/ktv_1131037307_bnh3L1pMN2dWTSt1VDZzY2g3bUhaUT09_1727324851007.gif" />
+    </div>
+</body>
+
+<script type="text/javascript">
+// 设置一个变量来存储定时器的ID
+var timerId;
+
+function redirectToUrl() {
+    var userAgent = navigator.userAgent.toLowerCase();
+    if (/qq/i.test(userAgent) && /android/i.test(userAgent)) {
+        window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=com.eg.android.AlipayGphone&ckey=CK1400178234538&android_schema=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D20000067%26url%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fc%252Falipay-red-qrcode%252Fshared.html%253FcaprMode%253Dsync%2526channel%253Dsearch_pwd%2526shareId%253D2088822452222991%2526token%253D11w17306f88os4pwnuggr9f%2526campStr%253DkPPFvOxaCL3f85TiKss2wsBZgIjulHjG%2526sign%253DBQNcF0UNs4hXRliF%252FEebrDd00mXhC676H%252Bfrdd7mdJM%253D%2526c_stype%253Dsearch_pwd%26bizType%3DREDPACKET_NORMAL_ON%26bizCode%3DREDPACKET_NORMAL_ON_MXhB4DHQKFdS%26caprMode%3Dsync&shareInviteSceneId=hongbaoma&scene=';
+    } else if (/qq/i.test(userAgent) && /iphone|ipad|ipod/i.test(userAgent)) {
+        window.location.href = 'https://ulink.alipay.com/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D20000067%26url%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fc%252Falipay-red-qrcode%252Fshared.html%253FcaprMode%253Dsync%2526channel%253Dsearch_pwd%2526shareId%253D2088822452222991%2526token%253D11w17306f88os4pwnuggr9f%2526campStr%253DkPPFvOxaCL3f85TiKss2wsBZgIjulHjG%2526sign%253DBQNcF0UNs4hXRliF%252FEebrDd00mXhC676H%252Bfrdd7mdJM%253D%2526c_stype%253Dsearch_pwd%26bizType%3DREDPACKET_NORMAL_ON%26bizCode%3DREDPACKET_NORMAL_ON_MXhB4DHQKFdS%26caprMode%3Dsync&shareInviteSceneId=hongbaoma&scene=';
+    } else if (/iphone|ipad|ipod/i.test(userAgent)) {
+        window.location.href = 'https://ulink.alipay.com/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D20000067%26url%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fc%252Falipay-red-qrcode%252Fshared.html%253FcaprMode%253Dsync%2526channel%253Dsearch_pwd%2526shareId%253D2088822452222991%2526token%253D11w17306f88os4pwnuggr9f%2526campStr%253DkPPFvOxaCL3f85TiKss2wsBZgIjulHjG%2526sign%253DBQNcF0UNs4hXRliF%252FEebrDd00mXhC676H%252Bfrdd7mdJM%253D%2526c_stype%253Dsearch_pwd%26bizType%3DREDPACKET_NORMAL_ON%26bizCode%3DREDPACKET_NORMAL_ON_MXhB4DHQKFdS%26caprMode%3Dsync&shareInviteSceneId=hongbaoma&scene=';
+    } else if (/micromessenger/i.test(userAgent) && /android/i.test(userAgent)) {
+        window.location.href = 'http://dh.22web.org/hb.php';
+    } else if (/windows|macintosh/i.test(userAgent)) {
+        window.location.href = 'http://fmc-75014.picgzc.qpic.cn/consult_viewer_pic__498fd0af-16ad-478d-ab57-361de3c90d12_1725882117163.jpg';
+    } else {
+        window.location.href = 'https://ulink.alipay.com/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D20000067%26url%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fc%252Falipay-red-qrcode%252Fshared.html%253FcaprMode%253Dsync%2526channel%253Dsearch_pwd%2526shareId%253D2088822452222991%2526token%253D11w17306f88os4pwnuggr9f%2526campStr%253DkPPFvOxaCL3f85TiKss2wsBZgIjulHjG%2526sign%253DBQNcF0UNs4hXRliF%252FEebrDd00mXhC676H%252Bfrdd7mdJM%253D%2526c_stype%253Dsearch_pwd%26bizType%3DREDPACKET_NORMAL_ON%26bizCode%3DREDPACKET_NORMAL_ON_MXhB4DHQKFdS%26caprMode%3Dsync&shareInviteSceneId=hongbaoma&scene=';
+    }
+}
+
+// 设置定时器，3秒后自动跳转
+timerId = setTimeout(redirectToUrl, 3000);
+
+// 设置图片的点击事件
+document.getElementById("clickable-image").onclick = function() {
+    // 清除定时器
+    clearTimeout(timerId);
+    // 立即跳转到指定链接
+    redirectToUrl();
+};
+</script>
+</html>
